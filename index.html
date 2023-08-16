@@ -19,7 +19,7 @@
 
         #header {
             text-align: center;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         canvas {
@@ -28,7 +28,7 @@
 
         #signature-container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             flex-grow: 1;
@@ -44,8 +44,9 @@
         .buttons {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            margin-left: 20px;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
         }
 
         .button {
@@ -62,6 +63,15 @@
         .button:hover {
             background-color: #3e8e41;
         }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
     </style>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
 </head>
@@ -70,8 +80,8 @@
         <h1>ENLACE PARA CAPTURAR FIRMA DE ATENCIONES REALIZADAS - CEVA</h1>
     </div>
     <div id="signature-container">
+        <p>Firme dentro del marco:</p>
         <div id="signature-pad">
-            <p>Firme dentro del marco:</p>
             <canvas width=400 height=200></canvas>
         </div>
         <div class="buttons">
